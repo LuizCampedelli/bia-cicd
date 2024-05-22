@@ -12,6 +12,6 @@ phases:
       - REACT_APP_API_URL=http://localhost:3001 SKIP_PREFLIGHT_CHECK=true npm run build --prefix client
       - echo running unit tests...
       - npm test
-  post_build:
-    commands:
-      - codebuild-breakpoint
+  # post_build:
+  #   commands:
+  #     - codebuild-breakpoint
